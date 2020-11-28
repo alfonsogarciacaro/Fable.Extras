@@ -16,7 +16,7 @@
     "build": "webpack -p",
     "build-wasm": "wasm-pack build src/fable-wasm",
     "build-wasm-import": "wasm-pack build src/fable-wasm-import",
-    "pretest": "fable-splitter -c tests/Fable.Extras.Tests/splitter.config.js",
+    "pretest": "dotnet fable tests/Fable.Extras.Tests -o dist/tests/Extras",
     "publish-docs": "node publish.js",
     "start": "live-server --port=8080 docs/",
     "test": "jest",
